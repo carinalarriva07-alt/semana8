@@ -1,0 +1,15 @@
+1.	Inicio
+2.	Ingresar la lista con las fechas de cumpleaños = cantidad de personas.
+3.	¿Cantidad de personas es >= 2?
+4.	No: “No se puede comparar” → paso 6.
+5.	Si: 
+    •	Separa cada fecha en mes y día.
+    •	Comparar cada fecha con la siguiente. 
+    •	¿Alguna fecha es igual a otra? (fecha1 == fecha 2)
+        o	Sí: “Estas dos personas cumplen el mismo día” → paso 6.
+        o	No: 
+            -	Calcular la diferencia de días entre cada fecha. Diferencia = (fecha2 – fecha1).
+            -	Encontrar la menor diferencia: ¿diferencia < menor_diferencia?
+                •	No: volver al paso 3.
+                •	Sí: “Estas dos personas tienen el cumpleaños más cercano” → paso 6.
+6.	Fin
